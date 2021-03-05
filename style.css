@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 body {
-    background: black;
+    background: #141517;
     /* font-family: 'hurmeSemiBold'; */
     margin: 0%;
     overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -37,9 +40,7 @@ ul li a {
     font-weight: 400;
 }
 
-ul li a:hover {
-    color: #775DFF;
-}
+
 
 .landing {
     max-width: 100vw;
@@ -51,10 +52,24 @@ ul li a:hover {
     max-width: 100vw;
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/groupBG.png);
+   
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: 100% 93.5%;
+}
+.main{
+    display: flex;
+    justify-content:space-between
+}
+.UI{
+    width: 75vw;
+    
+    position: absolute;
+    z-index: -1;
+    right: -15rem;
+}
+.text{
+    color: #fff;
 }
 
 @media(max-width:630px) {
@@ -89,7 +104,7 @@ ul li a:hover {
 .dashboardbtn {
     /* background-color: #e5f507; */
     border-radius: 28.5px;
-    border: #e5f507 2px solid;
+    border: #FF7523 2px solid;
     outline: none;
     padding: 0.5rem 3rem;
     font-size: 18px;
@@ -99,7 +114,7 @@ ul li a:hover {
 
 .dashboardbtn:hover {
     color: #9fa2aa;
-    background-color: #88394d;
+   
 }
 
 
