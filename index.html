@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Kuai</title>
+</head>
+
+<body>
+    <div class="landing" id="home">
+        <nav>
+            <div class="logo_and_text">
+                <div class="logo"><img src="./assets/Shape.svg" alt=""></div>
+                <div class="text">
+                    KUAI
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+
+                    </li>
+                    <li>
+                        <a href="#features">Features</a>
+
+                    </li>
+                    <li>
+                        <a href="#sites">Bot</a>
+
+                    </li>
+                    <li>
+                        <a href="#faq">FAQ</a>
+
+                    </li>
+                    <li>
+                        <a href="#" class="dashboardbtn">Dashboard
+                           </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="mobnav">
+            <div class="logo"><img src="./assets/Shape.svg" alt=""></div>
+            <div class="burger-container">
+                <div id="burger">
+                    <div class="bar topBar"></div>
+                    <div class="bar btmBar"></div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li class="menu-item"><a href="#home">Home</a></li>
+                <li class="menu-item"><a href="#features">Features</a></li>
+                <li class="menu-item"><a href="#sites">Bot</a></li>
+                <li class="menu-item"><a href="#faq">FAQ</a></li>
+                <li class="menu-item"><a href="#dashboard">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        (function() {
+            var burger = document.querySelector(".burger-container"),
+                header = document.querySelector(".mobnav");
+            burger.onclick = function() {
+                header.classList.toggle("menu-opened");
+                document.querySelector(".menu").classList.toggle("visible");
+            };
+            $(".menu-item").click(function() {
+                header.classList.toggle("menu-opened");
+                document.querySelector(".menu").classList.toggle("visible");
+            });
+        })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        const tl = new TimelineMax()
+        const nav = document.querySelector("nav");
+        gsap.fromTo(".primarytext", 1, {
+            transform: "translateX(-100vw)"
+        }, {
+            transform: "translateX(0px)",
+            clearProps: "transform",
+            ease: Power2.easeInOut,
+        });
+        gsap.fromTo(".purchase", 1, {
+            opacity: 0,
+            transform: "translateX(-100vw)"
+        }, {
+            opacity: 1,
+            transform: "translateX(0px)",
+            clearProps: "transform",
+            ease: Power2.easeInOut,
+        });
+        gsap.fromTo(".secondarytext", 1, {
+            opacity: 0,
+            transform: "translateX(-100vw)"
+        }, {
+            opacity: 1,
+            transform: "translateX(0px)",
+            clearProps: "transform",
+            ease: Power2.easeInOut,
+        });
+        gsap.fromTo(".UI", 1, {
+            opacity: 0,
+            transform: "translateX(100vw)"
+        }, {
+            opacity: 1,
+            transform: "translateX(0px)",
+            clearProps: "transform",
+            ease: Power2.easeInOut,
+        });
+        gsap.fromTo(".mobnav", 1, {
+            transform: "translateY(-20vw)"
+        }, {
+            transform: "translateY(0px)",
+            clearProps: "transform",
+            ease: Power2.easeInOut
+        });
+        gsap.fromTo(nav, 1, {
+            transform: "translateY(-10vw)"
+        }, {
+            transform: "translateY(0px)",
+            clearProps: "transform",
+            ease: Power2.easeInOut,
+        })
+
+        gsap.fromTo(".faq", 1, {
+            transform: "translateY(10vw)",
+            opacity: 0
+        }, {
+            transform: "translateY(0vw)",
+            opacity: 1,
+            ease: Power2.easeInOut,
+            clearProps: "transform",
+            scrollTrigger: {
+                trigger: ".supportedsites",
+                start: "bottom 100px",
+                toggleActions: "play none none none"
+            }
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
