@@ -352,7 +352,8 @@ ul li a {
         width: 100%;
     }
     .mobnav.menu-opened {
-        height: 100%;
+        height: 100vh;
+        position: fixed;
         background-color: black;
         -webkit-transition: all 0.3s ease-in, background 0.5s ease-in;
         transition: all 0.3s ease-in, background 0.5s ease-in;
