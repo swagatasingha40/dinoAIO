@@ -166,6 +166,63 @@ ul li a {
     display: block;
 }
 
+.feature_image {
+    margin-top: -220px;
+}
+
+.feature_img {
+    width: 50vw;
+}
+
+.feature_subsection {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0px;
+}
+
+.text_region {
+    margin-left: 5vw;
+    width: 30vw;
+    max-height: 300px;
+    color: #fff;
+    border: rgba(196, 191, 191, 0.171) 2px solid;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.text_region ul {
+    display: inline-block;
+}
+
+.text_region ul li {
+    list-style-Type: none;
+    padding: 0 0 4px 23px;
+    background: url(/assets/img/Oval.png) no-repeat left center;
+    margin-bottom: 1rem;
+    color: #9197A4;
+}
+
+@media(max-width:767px) {
+    .feature_subsection {
+        display: flex;
+        /* justify-content: space-between;*/
+        flex-direction: column;
+        /*flex-wrap: wrap;*/
+    }
+    .feature_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    #alt {
+        margin: 0px;
+    }
+    .feature_image {
+        max-width: 80vw;
+    }
+}
+
 
 /* mobile navbar code  */
 
