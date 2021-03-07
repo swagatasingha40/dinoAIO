@@ -166,22 +166,40 @@ ul li a {
     display: block;
 }
 
-.feature_image {
+
+/* photo and list inside tab */
+
+.feature_image1 {
     margin-top: -220px;
+    margin-left: 0;
+    margin-right: auto;
+    z-index: -1;
 }
 
-.feature_img {
+.feature_image2 {
+    margin-top: -220px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: -1;
+}
+
+.feature_img1 {
     width: 50vw;
+    display: flex;
+}
+
+.feature_img2 {
+    width: 50vw;
+    display: flex;
 }
 
 .feature_subsection {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0px;
 }
 
-.text_region {
-    margin-left: 5vw;
+.text_region1 {
+    margin-right: 10vw;
     width: 30vw;
     max-height: 300px;
     color: #fff;
@@ -190,11 +208,35 @@ ul li a {
     padding: 2rem;
 }
 
-.text_region ul {
-    display: inline-block;
+.text_region2 {
+    margin-left: 10vw;
+    width: 30vw;
+    max-height: 300px;
+    color: #fff;
+    border: rgba(196, 191, 191, 0.171) 2px solid;
+    border-radius: 15px;
+    padding: 2rem;
 }
 
-.text_region ul li {
+.text_region1 ul {
+    display: inline-block;
+    padding-inline-start: 0;
+}
+
+.text_region2 ul {
+    display: inline-block;
+    padding-inline-start: 0;
+}
+
+.text_region1 ul li {
+    list-style-Type: none;
+    padding: 0 0 4px 23px;
+    background: url(/assets/img/Oval.png) no-repeat left center;
+    margin-bottom: 1rem;
+    color: #9197A4;
+}
+
+.text_region2 ul li {
     list-style-Type: none;
     padding: 0 0 4px 23px;
     background: url(/assets/img/Oval.png) no-repeat left center;
@@ -205,11 +247,15 @@ ul li a {
 @media(max-width:767px) {
     .feature_subsection {
         display: flex;
-        /* justify-content: space-between;*/
         flex-direction: column;
-        /*flex-wrap: wrap;*/
     }
-    .feature_img {
+    .feature_img1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .feature_img2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -218,7 +264,10 @@ ul li a {
     #alt {
         margin: 0px;
     }
-    .feature_image {
+    .feature_image1 {
+        max-width: 80vw;
+    }
+    .feature_image2 {
         max-width: 80vw;
     }
 }
