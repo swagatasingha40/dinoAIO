@@ -67,10 +67,10 @@
             <div class="landing">
             
                 <div class="details">
-                <div class="text_region">
-                    <h1 class="primary_text">Lorem ipsum dolor sit </h1>
-                    <h2 class="secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor</h2>
-                </div>
+                    <div class="text_region">
+                        <h1 class="primary_text">Lorem ipsum dolor sit </h1>
+                        <h2 class="secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor</h2>
+                    </div>
                     <div class="soldout_btn">
                        <a href="#" class="soldout"> Sold Out $250</a>
                     </div>
@@ -92,13 +92,13 @@
                 <li>
                     <div class="qnatab-a active-a qnatab-1" data-id="qnatab1">
                         <img class="tab_img" src="./assets/img/qnatab1enable.png">
-                        <p>UI</p>
+                        <p id="tab_selector">UI</p>
                     </div>
                 </li>
                 <li>
                     <div class="qnatab-a qnatab-2" data-id="qnatab2">
                         <img class="tab_img" src="./assets/img/qnatab2disable.png">
-                        <p>CLI</p>
+                        <p id="tab_selector">CLI</p>
 
                     </div>
                 </li>
@@ -111,7 +111,8 @@
                     <div class="feature_img1">
                         <img class="feature_image1" id= "feature_image1" src="./assets/img/ui-tab-img.png" data-aos="fade-left" data-aos-offset="200" data-aos-delay="100">
                     </div>
-                    <div class="text_region1">
+                    <div class="text_container">
+                        <div class="text_region1">
                         <h3 id="subsection_head1">
                             Fastest Monitors
                         </h3>
@@ -122,6 +123,7 @@
                             <li>Lorem ipsum</li>
                         </ul>
                     </div>
+                    </div>
                 </div>
             </div>
             <!-- ending of qna section-->
@@ -130,18 +132,21 @@
 
         <div class="qnatab " data-id="qnatab2">
             <div class="faqcontent">
-                <div class="feature_subsection">
-                    <div class="text_region2">
-                        <h3 id="subsection_head2">
-                            Fastest Monitors
-                        </h3>
-                        <ul>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                        </ul>
+                <div class="feature_subsection" id="reverse">
+                    <div class="text_container" id="second_container">
+                        <div class="text_region2">
+                            <h3 id="subsection_head2">
+                                Fastest Monitors
+                            </h3>
+                            <ul>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                                <li>Lorem ipsum</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="feature_img2">
                         <img class="feature_image2" src="./assets/img/cli-tab-img.png" data-aos="fade-left" data-aos-offset="200" data-aos-delay="100">
                     </div>
@@ -218,10 +223,10 @@
         </div>
         <div class = "sites">
             <div class="clearfix1">
-                <h1 class="Feature_heading">Advanced Features</h1>
+                <h1 class="Feature_heading">Sitelist</h1>
             </div>
             <div class="clearfix1">
-            <h2 class="feature_subheading">You will never want to turn back</h2>
+            <h2 class="feature_subheading">Supporting your favorite sites</h2>
             </div>
             <div class="feature_grid">
                 <div class="clearfix" id="site">
@@ -264,6 +269,10 @@
                         <img src="./assets/trigolo.svg">
                     </div>
     
+                </div>
+                <div class="modal_btn">
+                    <img src="./assets/down_arrow.svg">
+                    View All Sites
                 </div>
             </div>
 
