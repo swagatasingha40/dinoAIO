@@ -456,9 +456,13 @@ ul li a {
     .text_container{
         display: flex;
         justify-content: center;
+       
     }
     .feature_grid{
         padding: 0px;
+    }
+    .text_region1{
+        margin-right: 0;
     }
     .text_region2{
         width: 55vw;
@@ -466,7 +470,7 @@ ul li a {
         margin: 6vw 0vw;
     }
     #feature_image1 {
-        width: 50vw;
+        width: 80vw;
     }
     .text_region2 h3{
         font-size: 6vw;
