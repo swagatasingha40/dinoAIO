@@ -125,6 +125,13 @@ ul li a {
         font-size: 2vw;
     }
 }
+@media(min-width:1030px){
+    .ui{
+        width: 63vw;    
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 
 @media(max-width:630px) {
     .landing {
@@ -142,6 +149,12 @@ ul li a {
     .landing {
         max-width: 100vw;
         height: 100vh;
+    }
+    .Feature_heading{
+        font-size: 4vw !important;
+    }
+    .feature_subheading{
+        font-size:5vw  !important;
     }
 }
 
@@ -427,6 +440,12 @@ ul li a {
     .landing{
         display: flex;
         flex-direction: column;
+    }
+    .text_region2{
+        width: 50vw  !important;
+    }
+    #subsection_head2 {
+        font-size: 5vw;
     }
     .ui{
         width: 100vw;
