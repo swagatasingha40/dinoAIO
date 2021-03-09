@@ -510,6 +510,28 @@ ul li a {
     padding: 16px 16px;
 }
 
+@media(max-width:767px) {
+    .modal {
+        padding-top: 5vh;
+    }
+    .modal-content {
+        width: 90%;
+    }
+    .modal-header {
+        padding: 2px 1rem;
+    }
+    .modal-body {
+        margin-bottom: 2rem;
+    }
+    .modal-body ul {
+        padding-inline-start: 4vw;
+        margin-block-start: 0px;
+    }
+    .modal-body ul li {
+        padding: 10px 16px;
+    }
+}
+
 
 /* modal code ends here */
 
