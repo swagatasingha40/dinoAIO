@@ -164,7 +164,7 @@ ul li a {
         width: 45vw;
     }
     .feature_image2 {
-        width: 47vw;
+        width: 55vw;
     }
     .text_region2 {
         height: 80%;
@@ -182,9 +182,7 @@ ul li a {
     #tab_selector {
         font-size: 1vw;
     }
-    .qnatab-a {
-        padding: 50px 6rem !important;
-    }
+    
     .feature_rectangle1 {
         width: 21vw;
         height: 11vw;
@@ -764,6 +762,13 @@ ul li a {
     .mobnav ul li {
         margin: 0px;
     }
+    .FAQ_with_kutta{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     nav {
         display: none;
     }
@@ -1015,6 +1020,13 @@ ul li a {
         display: flex;
         flex-direction: column;
     }
+    .FAQ_with_kutta{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .feature_img1 {
         display: flex;
         margin: 0px;
@@ -1126,3 +1138,70 @@ ul li a {
         color: #9197A4;
     }
 }
+
+.accordian {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .accordian-item {
+    border: 1px solid #242329;
+    color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    width: 60vw;
+    
+  }
+  
+  .accordian-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .accordian-item-header::after {
+    content: url("./assets/plus.svg");
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    /* transition: all 0.2s ease; */
+  }
+  
+  .accordian-item-header.active::after {
+    content: url("./assets/minus.svg");
+  }
+  
+  .accordian-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordian-item-body-content {
+    padding: 1rem;
+    line-height: 1.5;
+    border-top: 1px solid #34495e;
+  }
+  .accordian-item-body-content p{
+      color: #827F7F;
+  }
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  .FAQ_with_kutta{
+      display:flex;
+  }
+  .kuttar_baccha{
+      height: 30vw;
+  }
