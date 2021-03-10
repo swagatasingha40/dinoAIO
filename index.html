@@ -194,9 +194,6 @@
                     <p class="feature_text">Lorem ipsum dolor sit amet,</p>
 
                 </div>
-            </div>
-
-            <div class="clearfix">
                 <div class="feature_rectangle1">
                     <img src="./assets/icons8-natural-user-interface-2.png">
                     <h3>Windows and MacOS</h3>
@@ -331,181 +328,174 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="footer-inner footer-icon">
-                <img id = "footer_icon"src="./assets/img/navlogo.png" alt="">
+                <img src="./assets/img/navlogo.png" alt="">
                 <h3>@ Dino AIO, 2021</h3>
             </div>
             <div class="footer-inner">
 
-    </div>
-    <div class="footer">
-        <div class="footer-inner footer-icon">
-            <img src="./assets/img/navlogo.png" alt="">
-            <h3>@ Dino AIO, 2021</h3>
+                <ul class="footer-ul">
+                    <li>Home</li>
+                    <li>Software</li>
+                    <li>Features</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <ul class="footer-ul">
+                    <li>
+                        Privacy Policy
+                    </li>
+
+                    <li>
+                        Terms & Conditions
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <ul class="footer-ul">
+                    <li>
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>Twitter
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-inner">
 
-            <ul class="footer-ul">
-                <li>Home</li>
-                <li>Software</li>
-                <li>Features</li>
-                <li>FAQ</li>
-            </ul>
-        </div>
-        <div class="footer-inner">
-            <ul class="footer-ul">
-                <li>
-                    Privacy Policy
-                </li>
+        <!-- modal script start -->
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
 
-                <li>
-                    Terms & Conditions
-                </li>
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
 
-            </ul>
-        </div>
-        <div class="footer-inner">
-            <ul class="footer-ul">
-                <li>
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>Twitter
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- modal script start -->
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
+            span.onclick = function() {
                 modal.style.display = "none";
             }
-        }
-    </script>
-    <!-- modal script end -->
 
-    <script>
-        $(document).ready(function() {
-            $('.qnatab-a').click(function() {
-                $(".qnatab").removeClass('qnatab-active');
-                $(".qnatab[data-id='" + $(this).attr('data-id') + "']").addClass("qnatab-active");
-
-                let x = "";
-                x = "./assets/img/" + $(".active-a").attr("data-id");
-                $(".active-a .tab_img").attr("src", x + "disable.png");
-
-                $(".qnatab-a").removeClass('active-a');
-
-                $(this).parent().find(".qnatab-a").addClass('active-a');
-                x = "./assets/img/" + $(".active-a").attr("data-id");
-                $(this).parent().find(".tab_img").attr("src", x + "enable.png");
-
-
-            });
-        });
-    </script>
-
-    <script>
-        (function() {
-            var burger = document.querySelector(".burger-container"),
-                header = document.querySelector(".mobnav");
-            burger.onclick = function() {
-                header.classList.toggle("menu-opened");
-                document.querySelector(".menu").classList.toggle("visible");
-            };
-            $(".menu-item").click(function() {
-                header.classList.toggle("menu-opened");
-                document.querySelector(".menu").classList.toggle("visible");
-            });
-        })();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-        const tl = new TimelineMax()
-        const nav = document.querySelector("nav");
-        gsap.fromTo(".primarytext", 1, {
-            transform: "translateX(-100vw)"
-        }, {
-            transform: "translateX(0px)",
-            clearProps: "transform",
-            ease: Power2.easeInOut,
-        });
-        gsap.fromTo(".purchase", 1, {
-            opacity: 0,
-            transform: "translateX(-100vw)"
-        }, {
-            opacity: 1,
-            transform: "translateX(0px)",
-            clearProps: "transform",
-            ease: Power2.easeInOut,
-        });
-        gsap.fromTo(".secondarytext", 1, {
-            opacity: 0,
-            transform: "translateX(-100vw)"
-        }, {
-            opacity: 1,
-            transform: "translateX(0px)",
-            clearProps: "transform",
-            ease: Power2.easeInOut,
-        });
-        gsap.fromTo(".UI", 1, {
-            opacity: 0,
-            transform: "translateX(100vw)"
-        }, {
-            opacity: 1,
-            transform: "translateX(0px)",
-            clearProps: "transform",
-            ease: Power2.easeInOut,
-        });
-        gsap.fromTo(".mobnav", 1, {
-            transform: "translateY(-20vw)"
-        }, {
-            transform: "translateY(0px)",
-            clearProps: "transform",
-            ease: Power2.easeInOut
-        });
-        gsap.fromTo(nav, 1, {
-            transform: "translateY(-10vw)"
-        }, {
-            transform: "translateY(0px)",
-            clearProps: "transform",
-            ease: Power2.easeInOut,
-        })
-
-        gsap.fromTo(".faq", 1, {
-            transform: "translateY(10vw)",
-            opacity: 0
-        }, {
-            transform: "translateY(0vw)",
-            opacity: 1,
-            ease: Power2.easeInOut,
-            clearProps: "transform",
-            scrollTrigger: {
-                trigger: ".supportedsites",
-                start: "bottom 100px",
-                toggleActions: "play none none none"
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
-        })
-    </script>
+        </script>
+        <!-- modal script end -->
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <script>
+            $(document).ready(function() {
+                $('.qnatab-a').click(function() {
+                    $(".qnatab").removeClass('qnatab-active');
+                    $(".qnatab[data-id='" + $(this).attr('data-id') + "']").addClass("qnatab-active");
+
+                    let x = "";
+                    x = "./assets/img/" + $(".active-a").attr("data-id");
+                    $(".active-a .tab_img").attr("src", x + "disable.png");
+
+                    $(".qnatab-a").removeClass('active-a');
+
+                    $(this).parent().find(".qnatab-a").addClass('active-a');
+                    x = "./assets/img/" + $(".active-a").attr("data-id");
+                    $(this).parent().find(".tab_img").attr("src", x + "enable.png");
+
+
+                });
+            });
+        </script>
+
+        <script>
+            (function() {
+                var burger = document.querySelector(".burger-container"),
+                    header = document.querySelector(".mobnav");
+                burger.onclick = function() {
+                    header.classList.toggle("menu-opened");
+                    document.querySelector(".menu").classList.toggle("visible");
+                };
+                $(".menu-item").click(function() {
+                    header.classList.toggle("menu-opened");
+                    document.querySelector(".menu").classList.toggle("visible");
+                });
+            })();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+            const tl = new TimelineMax()
+            const nav = document.querySelector("nav");
+            gsap.fromTo(".primarytext", 1, {
+                transform: "translateX(-100vw)"
+            }, {
+                transform: "translateX(0px)",
+                clearProps: "transform",
+                ease: Power2.easeInOut,
+            });
+            gsap.fromTo(".purchase", 1, {
+                opacity: 0,
+                transform: "translateX(-100vw)"
+            }, {
+                opacity: 1,
+                transform: "translateX(0px)",
+                clearProps: "transform",
+                ease: Power2.easeInOut,
+            });
+            gsap.fromTo(".secondarytext", 1, {
+                opacity: 0,
+                transform: "translateX(-100vw)"
+            }, {
+                opacity: 1,
+                transform: "translateX(0px)",
+                clearProps: "transform",
+                ease: Power2.easeInOut,
+            });
+            gsap.fromTo(".UI", 1, {
+                opacity: 0,
+                transform: "translateX(100vw)"
+            }, {
+                opacity: 1,
+                transform: "translateX(0px)",
+                clearProps: "transform",
+                ease: Power2.easeInOut,
+            });
+            gsap.fromTo(".mobnav", 1, {
+                transform: "translateY(-20vw)"
+            }, {
+                transform: "translateY(0px)",
+                clearProps: "transform",
+                ease: Power2.easeInOut
+            });
+            gsap.fromTo(nav, 1, {
+                transform: "translateY(-10vw)"
+            }, {
+                transform: "translateY(0px)",
+                clearProps: "transform",
+                ease: Power2.easeInOut,
+            })
+
+            gsap.fromTo(".faq", 1, {
+                transform: "translateY(10vw)",
+                opacity: 0
+            }, {
+                transform: "translateY(0vw)",
+                opacity: 1,
+                ease: Power2.easeInOut,
+                clearProps: "transform",
+                scrollTrigger: {
+                    trigger: ".supportedsites",
+                    start: "bottom 100px",
+                    toggleActions: "play none none none"
+                }
+            })
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

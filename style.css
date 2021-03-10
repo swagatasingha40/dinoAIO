@@ -124,12 +124,11 @@ ul li a {
         width: 50vw !important;
     }
     .UI {
-         width: 70vw;
+        width: 70vw;
     }
     #tab_selector {
         font-size: 2vw;
     }
-    
 }
 
 @media(min-width:1030px) {
@@ -138,19 +137,19 @@ ul li a {
         display: flex;
         justify-content: flex-end;
     }
-    .logo img{
+    .logo img {
         height: 2vw;
     }
-    .soldout{
+    .soldout {
         font-size: 1vw;
-    }    
-    #footer_icon{
+    }
+    #footer_icon {
         height: 2vw;
     }
-    .footer{
+    .footer {
         font-size: 1vw;
     }
-    .links{
+    .links {
         font-size: 1vw;
     }
     .clearfix {
@@ -161,61 +160,59 @@ ul li a {
         margin-bottom: 1rem;
         width: 80% !important;
     }
-
-    .feature_image1{
+    .feature_image1 {
         width: 45vw;
     }
-    .feature_image2{
+    .feature_image2 {
         width: 47vw;
     }
-    .text_region2{
-        height: 80%;
-        margin-top: 5vw;
-        padding: 5rem  !important;
-    }
-    .text_region1{
+    .text_region2 {
         height: 80%;
         margin-top: 5vw;
         padding: 5rem !important;
     }
-    .tab_img{
-        height:1vw;
+    .text_region1 {
+        height: 80%;
+        margin-top: 5vw;
+        padding: 5rem !important;
     }
-    #tab_selector{
+    .tab_img {
+        height: 1vw;
+    }
+    #tab_selector {
         font-size: 1vw;
     }
-    .qnatab-a{
+    .qnatab-a {
         padding: 50px 6rem !important;
     }
-    .feature_grid{
-        padding: 0 13rem 0 9rem !important; 
-    }
-    .feature_rectangle1{
+    .feature_rectangle1 {
         width: 21vw;
         height: 11vw;
     }
-    .feature_rectangle1 img{
+    .feature_rectangle1 img {
         height: 1vw;
         height: 1.6vw;
         margin: 1vw 0vw 0vw 1vw;
     }
-    .feature_text{
+    .feature_text {
         font-size: 1vw;
-        color:#9197A4;
+        color: #9197A4;
         margin: 0%;
         margin: 0vw 0vw 0vw 1vw;
     }
-    .feature_rectangle1 h3{
+    .feature_rectangle1 h3 {
         font-size: 1.5vw;
         margin: 0;
         margin: 0.8vw 0vw 0.8vw 1vw;
     }
 }
-@media(width:2560px){
-    .qnatab-a{
-        padding: 7px 2rem  !important;
+
+@media(width:2560px) {
+    .qnatab-a {
+        padding: 7px 2rem !important;
     }
 }
+
 @media(max-width:630px) {
     .landing {
         max-width: 100vw;
@@ -418,8 +415,9 @@ ul li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 90vw;
+    margin: 0px auto;
     margin-top: 2rem;
-    padding: 0 10rem 0 10rem;
 }
 
 .feature_rectangle1 {
@@ -470,7 +468,7 @@ ul li a {
 .site_logo {
     display: flex;
     justify-content: center;
-    width: 160px;
+    width: 200px;
     padding: 1rem;
     height: 100px;
 }
@@ -711,7 +709,7 @@ ul li a {
     .UI {
         width: 140vw;
     }
-    .qnatab-a{
+    .qnatab-a {
         padding: 5px 0.5em;
     }
     #alt {
@@ -755,9 +753,7 @@ ul li a {
     .text_region2 ul li {
         font-size: 3vw;
     }
-    .feature_image2{
-        
-    }
+    .feature_image2 {}
 }
 
 @media(max-width:767px) {
@@ -1014,7 +1010,7 @@ ul li a {
     }
 }
 
-@media(width:768px) and (height:1024px){
+@media(width:768px) and (height:1024px) {
     .feature_subsection {
         display: flex;
         flex-direction: column;
@@ -1069,7 +1065,7 @@ ul li a {
     .UI {
         width: 111vw;
     }
-    .qnatab-a{
+    .qnatab-a {
         padding: 5px 0.5em;
     }
     #alt {
@@ -1113,7 +1109,7 @@ ul li a {
     .text_region2 ul li {
         font-size: 3vw;
     }
-    .landing{
+    .landing {
         height: 90vh;
     }
     .Feature_heading {
@@ -1126,7 +1122,7 @@ ul li a {
         margin-top: 2rem;
         padding: 0 5rem 0 5rem;
     }
-    .feature_text{
+    .feature_text {
         color: #9197A4;
     }
 }
