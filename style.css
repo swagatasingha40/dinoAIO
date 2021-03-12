@@ -157,8 +157,7 @@ ul li a {
         flex-wrap: wrap;
         justify-content: space-evenly;
         /* width: 100%; */
-        margin-bottom: 1rem;
-        width: 80% !important;
+        margin: 2rem;
     }
     .feature_image1 {
         width: 45vw;
@@ -167,12 +166,12 @@ ul li a {
         width: 55vw;
     }
     .text_region2 {
-        height: 80%;
+        /* height: 80%; */
         margin-top: 5vw;
         padding: 5rem !important;
     }
     .text_region1 {
-        height: 80%;
+        /* height: 80%; */
         margin-top: 5vw;
         padding: 5rem !important;
     }
@@ -182,7 +181,6 @@ ul li a {
     #tab_selector {
         font-size: 1vw;
     }
-    
     .feature_rectangle1 {
         width: 21vw;
         height: 11vw;
@@ -413,9 +411,11 @@ ul li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 80vw;
     margin: 0px auto;
     margin-top: 2rem;
+    background-color: #1D1E21;
+    border-radius: 12px;
 }
 
 .feature_rectangle1 {
@@ -451,7 +451,7 @@ ul li a {
 }
 
 .clearfix1 {
-    margin: 0 15vw;
+    margin: 0 10vw;
     color: #FF670C;
 }
 
@@ -459,9 +459,7 @@ ul li a {
     margin-left: 5vw;
 }
 
-#site {
-    margin: 0 5vw;
-}
+#site {}
 
 .site_logo {
     display: flex;
@@ -499,7 +497,9 @@ ul li a {
 /* modal code starts here */
 
 #myBtn {
+    display: flex;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .modal {
@@ -620,12 +620,12 @@ ul li a {
 
 .footer {
     width: 80%;
-    margin: 0px auto;
+    margin: 3rem auto;
     color: #9197A4;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-inner {
@@ -751,7 +751,6 @@ ul li a {
     .text_region2 ul li {
         font-size: 3vw;
     }
-    .feature_image2 {}
 }
 
 @media(max-width:767px) {
@@ -762,9 +761,8 @@ ul li a {
     .mobnav ul li {
         margin: 0px;
     }
-    .FAQ_with_kutta{
-
-        display:flex;
+    .FAQ_with_kutta {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1020,9 +1018,8 @@ ul li a {
         display: flex;
         flex-direction: column;
     }
-    .FAQ_with_kutta{
-
-        display:flex;
+    .FAQ_with_kutta {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1140,24 +1137,22 @@ ul li a {
 }
 
 .accordian {
-    width: 90%;
+    width: 45vw;
     max-width: 1000px;
-    margin: 2rem auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .accordian-item {
+    align-items: flex-end;
+}
+
+.accordian-item {
     border: 1px solid #242329;
     color: #fff;
     margin: 1rem 0;
     border-radius: 0.5rem;
-    width: 60vw;
-    
-  }
-  
-  .accordian-item-header {
+    width: 43vw;
+}
+
+.accordian-item-header {
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
     line-height: 1.25rem;
@@ -1165,43 +1160,57 @@ ul li a {
     align-items: center;
     position: relative;
     cursor: pointer;
-  }
-  
-  .accordian-item-header::after {
+}
+
+.accordian-item-header::after {
     content: url("./assets/plus.svg");
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
     right: 1rem;
     /* transition: all 0.2s ease; */
-  }
-  
-  .accordian-item-header.active::after {
+}
+
+.accordian-item-header.active::after {
     content: url("./assets/minus.svg");
-  }
-  
-  .accordian-item-body {
+}
+
+.accordian-item-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  
-  .accordian-item-body-content {
+}
+
+.accordian-item-body-content {
     padding: 1rem;
     line-height: 1.5;
-    border-top: 1px solid #34495e;
-  }
-  .accordian-item-body-content p{
-      color: #827F7F;
-  }
-  @media (max-width: 768px) {
+}
+
+.accordian-item-body-content p {
+    color: #827F7F;
+}
+
+@media (max-width: 768px) {
     html {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  .FAQ_with_kutta{
-      display:flex;
-  }
-  .kuttar_baccha{
-      height: 30vw;
-  }
+}
+
+.FAQ {
+    background-color: #18191B;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.FAQ_with_kutta {
+    display: flex;
+    margin: 0 10vw;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kuttar_baccha {
+    max-height: 25vw;
+}
