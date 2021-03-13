@@ -63,18 +63,20 @@ ul li a {
     height: 70vh;
     /*margin-bottom: 14vw;*/
 }
-.text_region::before{
+
+.text_region::before {
     content: '';
-    background: url('./assets/Fill1.svg')  no-repeat;
-    position: absolute; 
+    background: url('./assets/Fill1.svg') no-repeat;
+    position: absolute;
     background-size: contain;
-    top: 0px; 
-    left: 0px; 
-    width: 25vw; 
-    height: 25vh; 
-    z-index: -1; 
+    top: 0px;
+    left: 0px;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
 }
-.landing::before{
+
+.landing::before {
     content: '';
     background: url(./assets/Fill2.svg) no-repeat;
     position: absolute;
@@ -153,7 +155,8 @@ ul li a {
         font-size: 2vw;
     }
 }
-#grid{
+
+#grid {
     background: none;
 }
 
@@ -447,7 +450,7 @@ ul li a {
 .feature_rectangle1 {
     display: block;
     justify-content: center;
-    padding: 1em;
+    padding: 1.5em;
     background: #242329;
     /*box-shadow: 4px 4px 100px 10px rgba(0, 0, 0, 0.25);*/
     border-radius: 11px;
@@ -455,11 +458,30 @@ ul li a {
     color: #eeeddf;
 }
 
+@media(max-width:767px) {
+    .feature_rectangle1 {
+        width: 74vw;
+    }
+}
+
+@media(width:768px) {
+    .feature_rectangle1 {
+        width: 32vw;
+    }
+}
+
 .Feature_heading {
     font-size: 1vw;
 }
 
-.Feature_heading:before {
+@media screen and (width: 1024px),
+screen and (height: 1366px) {
+    .Feature_heading {
+        font-size: 2vw;
+    }
+}
+
+.Feature_heading::before {
     background-color: #FF670C;
     content: "";
     display: inline-block;
@@ -467,7 +489,7 @@ ul li a {
     position: relative;
     vertical-align: middle;
     width: 3%;
-    z-index: -2;
+    margin-right: 5px;
     right: 0px;
 }
 
@@ -482,7 +504,7 @@ ul li a {
 }
 
 .details {
-    margin-left: 5vw;
+    margin-left: 10vw;
 }
 
 #site {}
@@ -671,6 +693,7 @@ ul li a {
 @media(max-width:767px) {
     .footer-inner {
         margin-bottom: 20px;
+        width: 120px;
     }
     .footer-ul {
         padding-inline-start: 0px;
@@ -1176,6 +1199,15 @@ ul li a {
     margin: 1rem 0;
     border-radius: 0.5rem;
     width: 43vw;
+}
+
+@media(max-width:768px) {
+    .accordian {
+        width: auto;
+    }
+    .accordian-item {
+        width: auto;
+    }
 }
 
 .accordian-item-header {
