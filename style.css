@@ -63,6 +63,29 @@ ul li a {
     height: 70vh;
     /*margin-bottom: 14vw;*/
 }
+.text_region::before{
+    content: '';
+    background: url('./assets/Fill1.svg')  no-repeat;
+    position: absolute; 
+    background-size: contain;
+    top: 0px; 
+    left: 0px; 
+    width: 25vw; 
+    height: 25vh; 
+    z-index: -1; 
+}
+.landing::before{
+    content: '';
+    background: url(./assets/Fill2.svg) no-repeat;
+    position: absolute;
+    background-size: contain;
+    left: 0px;
+    width: 31vw;
+    /* bottom: 39vw; */
+    height: 65vh;
+    /* margin-bottom: 304vw; */
+    z-index: -1;
+}
 
 .bg {
     opacity: 0.2;
@@ -129,6 +152,9 @@ ul li a {
     #tab_selector {
         font-size: 2vw;
     }
+}
+#grid{
+    background: none;
 }
 
 @media(min-width:1030px) {
