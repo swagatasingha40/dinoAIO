@@ -114,17 +114,17 @@ ul li a {
 }
 
 .soldout {
-    background: linear-gradient(270deg, #FF853C 0%, #FF670C 100%);
+    background: linear-gradient(270deg, #965CFF 0%, #7D35FF 100%);
     color: aliceblue;
     padding: 2.5% 8%;
     border-radius: 60px;
     font-weight: 600;
 }
 .soldout:hover {
-    background: linear-gradient(270deg, #FF670C 100%,#FF853C 0%);
+    background: linear-gradient(270deg, #7D35FF 100%,#965CFF 0%);
 }
 .UI {
-    width: 60vw;
+    width: 45vw;
 }
 
 #footnote {
@@ -170,7 +170,7 @@ ul li a {
     color:#9197A4;
 }
 .mainTitle{
-    color:#FF7421;
+    color:#7D35FF;
     font-style: italic;
     letter-spacing: 2px;
     font-weight: 900;
@@ -476,7 +476,7 @@ ul li a {
 
 .dashboardbtn {
     border-radius: 28.5px;
-    border: #FF7523 2px solid;
+    border: #7D35FF 2px solid;
     outline: none;
     padding: 0.5rem 3rem;
     font-size: 1vw;
@@ -486,7 +486,7 @@ ul li a {
 
 .dashboardbtn:hover {
     
-    background-color: #FF7523;
+    background-color: #7D35FF;
 }
 
 .qnatab-a {
@@ -635,7 +635,7 @@ ul li a {
 .clearfix {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -658,6 +658,7 @@ ul li a {
     justify-content: center;
     padding: 2rem;
     background: #242329;
+    width:35vw;
     /*box-shadow: 4px 4px 100px 10px rgba(0, 0, 0, 0.25);*/
     border-radius: 11px;
     margin-bottom: 2.5rem;
@@ -688,7 +689,7 @@ screen and (height: 1366px) {
 }
 
 .Feature_heading::before {
-    background-color: #FF670C;
+    background-color: #7D35FF;
     content: "";
     display: inline-block;
     height: 2px;
@@ -706,11 +707,12 @@ screen and (height: 1366px) {
 
 .clearfix1 {
     margin: 0 10vw;
-    color: #FF670C;
+    color: #7D35FF;
 }
 
 .details {
     margin-left: 10vw;
+    width: 40vw;
 }
 
 /* #site {} */
@@ -843,7 +845,7 @@ screen and (height: 1366px) {
 }
 
 .modal-body ul li {
-    background: url(./assets/img/Oval.png) no-repeat left center;
+    background: url(./assets2/Oval9.png) no-repeat left center;
     padding: 16px 16px;
 }
 
@@ -1467,7 +1469,7 @@ screen and (height: 1366px) {
 }
 
 .accordian-item-header::after {
-    content: url("./assets/plus.svg");
+    content: url("./assets2/plus-circle.svg");
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
@@ -1476,7 +1478,7 @@ screen and (height: 1366px) {
 }
 
 .accordian-item-header.active::after {
-    content: url("./assets/minus.svg");
+    content: url("./assets2/uparrow.svg");
 }
 
 .accordian-item-body {
@@ -1548,6 +1550,8 @@ screen and (height: 1366px) {
     width: 62vw;
     height: 50vw;
     }
+   
+
 }
 @media(min-width: 768px) and (max-width: 1024px) {
     .text_region1 {
@@ -1569,5 +1573,54 @@ screen and (height: 1366px) {
     #tab_selector {
         margin-left: 0px;
     
+    }
+    .details {
+        margin-left: 10vw;
+        width: 60vw;
+    }
+    .landing_with_bg {
+        margin-top: 30vw;
+    }
+    .UI {
+        width: 100vw;
+    }
+    .Feature {
+        margin-top: 75vw;
+        margin-bottom: 5vw;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px) {
+    .details {
+        margin-left: 20vw;
+        width: 80vw;
+    }
+    .landing_with_bg {
+        margin-top: 30vw;
+    }
+    .UI {
+        width: 80vw;
+    }
+    .Feature {
+        margin-top: 20vw;
+        margin-bottom: 5vw;
+    }
+}
+@media(width:1024px) and (height:1080px) {
+    .UI {
+        width: 50vw;
+        margin-right: -5vw;
+    }
+    .details {
+        margin-left: 10vw;
+        width: 35vw;
+    }
+}
+@media(min-width:1024px) and (max-width:1919px) {
+    .landing_with_bg {
+        margin-top: 5vw;
+    }
+    .Feature {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
     }
 }
